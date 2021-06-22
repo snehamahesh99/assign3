@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+      <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+    </svg>
+    <style>
+        nav{
+            background-color: blueviolet;
+        }
+
+        #btn1{
+            background-color:blueviolet;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+        #btn2:hover{
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .buy{
+             width:300px;
+           background-color: rgb(219, 216, 216);
+         height: 120px;
+          display: flex;
+          justify-content:start;
+        }
+        .buy img{
+          margin-top:20px;
+          
+        }
+        .buy p{
+          width:200px;
+        }
+        .npm{
+          width:400px;
+          height:60px;
+          background-color: rgba(228, 227, 227, 0.637);
+          padding: 15px;
+        }
+        .btn1{
+          margin-left: 140px;
+          margin-top: 0px;
+        }
+        .btn2{
+          margin-left: 80px;
+          margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    
+      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 mb-5 ">
+        <a class="navbar-brand" href="#"><img src="./download.jpg" width="30" height="30" alt=""></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Docs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Icons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Themes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            
+            <button class="btn btn-outline-warning text-light my-2 my-sm-0" type="submit">Download</button>
+          </form>
+        </div>
+      </nav>
+   
+        <div class="row  mt-4 mx-3">
+        <div class="fst col-md-5">
+            <h1>Build fast, responsive sites with Bootstrap</h1>
+            <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolk
+                 featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+       <button class="btn rounded" id="btn1">
+            Get Started
+       </button>
+       <button class="btn ml-4" id="btn2">
+        Download
+        </button>
+      </div>
+        <div class="img1 col-md-5 ">
+            <img src="./download (1).jpg "class="ml-5 " width="492px" height="300px" alt="">
+        </div>
+    </div>
+    
+    Currently <span> v5.0.1: </span>;
+   <u> <a href="" class="text-dark px-1">v4.6.x docs</a></u>
+   <u> <a href=""  class="text-dark ">All releases</a></u>
+
+   <div class="row buy mt-5 mx-3">
+    <div>
+      <img src="./buy.png" width="80px;" height="80px" class="mx-2" alt="">
+    </div>
+    <div>
+    <p>We're hiring! Help make Carbon Ads the premier ad network for the dev and creator <br>
+      ads via Carbon</p> 
+    </div>
+     
+    
+
+   </div>
+   <button class="btn btn-success  mt-5 mx-3">
+    < >
+  </button>
+
+  <div class="row mx-1 mt-5 mb-5">
+    <div class="fst col-md-4">
+        <h1>Installation</h1>
+        <h4 class="mt-4">
+          Install Bootstrap’s source Sass and JavaScript files via npm, Composer, or Meteor.
+        </h4>
+        <p class="mt-4">
+          Package managed installs don’t include documentation or our full build scripts. You can also
+           <u><a href=""> use our npm template repo </a></u> to quickly generate a Bootstrap project via npm.
+        </p>
+        <button class="btn btn-outline-primary rounded py-3 px-5" >
+        Read Installation docs
+   </button>
+  </div>
+    <div class="img1 col-md-4 offset-3  ">
+      <div class="npm">
+        <p class="">$ npm install bootstrap
+          <button class="btn btn1 btn-outline-primary">copy</button>
+        </p>
+      </div>
+      <div class="npm mt-5">
+        <p class="">$ gem install bootstrap -v 5.0.1
+          <button class="btn btn2 btn-outline-primary ">copy</button>
+        </p>
+    </div>
+  </div>
+
+
+  <!-- <button class="btn btn-success  mt-5 mx-3">
+    < >
+  </button>
+
+  <div class="row mx-1 mt-5">
+    <div class="fst col-md-4">
+        <h1>jsDelivr</h1>
+        <h4 class="mt-4">
+          When you only need to include Bootstrap’s compiled CSS or JS, you can use <u><a href=""> jsDelivr.</a></u>
+        </h4>
+        <p class="mt-4">
+          See it in action with our simple starter template,
+           or browse the examples to jumpstart your next project. You can also choose to include Popper and our JS separately.
+        </p>
+        <button class="btn btn-outline-primary rounded py-3 px-5" >
+        Explore the docs
+   </button>
+  </div>
+    <div class="img1 col-md-4 offset-3  ">
+      <div class="npm">
+        <p class="">
+           <button class="btn btn1 btn-outline-primary">copy</button>
+        </p>
+      </div>
+      <div class="npm mt-5">
+        <p class="">$ gem install bootstrap -v 5.0.1
+          <button class="btn btn2 btn-outline-primary ">copy</button>
+        </p>
+    </div>
+  </div>
+-->
+<!-- 
+<button class="btn btn-success  mt-5 mx-3">
+  < >
+</button> -->
+
+
+
+<div class="row mx-3 mt-5 mb-5">
+  <div class="fst col-md-4">
+      <h1>jsDelivrn</h1>
+      <h4 class="mt-4">
+        When you only need to include Bootstrap’s compiled CSS or JS, you can use <u><a href=""> jsDelivr.</a></u>
+      </h4>
+      <p class="mt-4">
+        See it in action with our simple starter template,
+        or browse the examples to jumpstart your next project. You can also choose to include Popper and our JS separately.
+   </p>
+      <button class="btn btn-outline-primary rounded py-3 px-5" >
+      Explore the docs
+ </button>
+  </div>
+  <div class="img1 col-md-4 offset-3  ">
+    <div class="npm">
+      <p class="">$ npm install bootstrap
+        <button class="btn btn1 btn-outline-primary">copy</button>
+      </p>
+    </div>
+    <div class="npm mt-5">
+      <p class="">$ gem install bootstrap -v 5.0.1
+        <button class="btn btn2 btn-outline-primary ">copy</button>
+      </p>
+  </div>
+</div>
+</div>
+
+
+<div class="row mx-3 mt-5 mb-5">
+  <div class="fst col-md-5">
+      <h1>Bootstrap Icons</h1>
+      <h4 class="mt-4">
+        For the first time ever,
+         Bootstrap has its own open source SVG icon library, designed to work best with our components and documentation.</h4>
+      <p class="mt-4">
+        Bootstrap Icons are designed to work best with Bootstrap components, but they’ll work in any project. They’re SVGs,
+         so they scale quickly and easily, can be implemented in several ways, and can be styled with CSS.
+      </p>
+      <button class="btn btn-outline-primary rounded py-3 px-5" >
+   Get Bootstrap Icons
+ </button>
+</div>
+  <div class="img1 col-md-4 offset-2 ">
+   <img src="./bsicon.png " width="500px" height="300px" alt="">
+
+</div>
+</div>
+
+<div class="row mx-3 mt-5 mb-5">
+  <div class="fst col-md-5">
+      <h1>Official Themes</h1>
+      <h4 class="mt-4">
+        Take Bootstrap to the next level with premium themes from the <u><a href="">official Bootstrap Themes marketplace</a></u> .</h4>
+      <p class="mt-4">
+        Themes are built on Bootstrap as their own extended frameworks, rich with new components and plugins, documentation, and powerful build tools.
+      </p>
+      <button class="btn btn-outline-primary rounded py-3 px-5" >
+   Browse Themes
+ </button>
+</div>
+  <div class="img1 col-md-4 offset-2 ">
+   <img src="./bootstrap-themes.png " width="500px" height="300px" alt="">
+
+</div>
+</div>
+
+
+<div class="col">
+  <h3>Links</h3>
+  Home <br>
+  Docs<br>
+  Examples<br>
+  Themes<br>
+  Blog<br>
+</div>
+<div class="col">
+  <h3>Guides</h3>
+  Getting started<br>
+  Starter template<br>
+  Webpack<br>
+  Parcel<br>
+</div>
+<div class="col">
+  <h3>Projects</h3>
+  Bootstrap 5<br>
+  Bootstrap 4<br>
+  Icons<br>
+  RFS<br>
+  npm starter<br>
+</div>
+<div class="col">
+  <h3>Community</h3>
+  Issues<br>
+  Discussions<br>
+  Corporate sponsors<br>
+  Open Collective<br>
+  Slack<br>
+  Stack Overflow<br>
+</div>
+
+
+
+
+</div>
+
+
+
+
+    <script src="./jquery/jquery.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
